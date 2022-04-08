@@ -5,11 +5,11 @@
 }
 body
 {
-    background-image: url(imagens/livro.jpg);
+    background-image: url(imagens/natureza.jpg);
     
     color: white;
     font-family: Arial;
-    background-size: contain;
+    background-size:cover;
 }
 input
 {
@@ -76,7 +76,7 @@ input[type=submit]
 }
 div#msg-sucesso
 {
-    width: 40px;
+    width: 420px;
     margin: 10px auto;
     padding: 10px;
     background-color: rgba(50, 205, 50, .3);
@@ -84,7 +84,7 @@ div#msg-sucesso
 }
 div.msg-erro
 {
-    width: 40px;
+    width: 400px;
     margin: 10px auto;
     padding: 10px;
     background-color: rgba(250, 128, 114, .3);
