@@ -7,7 +7,7 @@ $u = new Usuario;
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@ $u = new Usuario;
 <body>
     <div id="corpo-form">
         <h1>Entrar</h1>
-        <form action="conecta.php" method="POST">
+        <form method="POST">
             <input type="email" name="email" placeholder="Usuário">
             <input type="password" name="senha" placeholder="Senha">
             <input type="submit" value="ACESSAR">
@@ -35,12 +35,12 @@ if(isset($_POST['email']))
     //verificar se está preenchido
     if(!empty($email)&&!empty($senha))
     {
-        $u->conectar("teste", "localhost", "root", "");
+        $u->conectar("pessoa", "localhost", "root", "");
             if($u->msErro == "")
             {
                 if($u->logar($email, $senha))
                 {
-                    header("AreaPrivada.php");
+                    header("location: areaPrivada.php");
                 }
                 else
                 {

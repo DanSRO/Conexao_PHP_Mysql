@@ -4,7 +4,7 @@ $u = new Usuario;
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@ $u = new Usuario;
 <body>
     <div id="corpo-form-cad">
         <h1>Cadastrar</h1>
-        <form action="conecta.php" method="POST">
+        <form method="POST">
             <input type="text" name="nome" placeholder="Nome Completo" maxlength="30">
             <input type="text" name="telefone" placeholder="Telefone" maxlength="11">
             <input type="email" name="email" placeholder="Usuário" maxlength="20">
